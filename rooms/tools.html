@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="utf-8"></head>
+  <title>Future of Cities Tools</title>
+  <body>
+    <script type="module">
+      import {load} from "https://croquet.io/webshowcase/v1.js";
+      load({
+        title: "My Web Showcase", 
+        showcase: "gallery", 
+        cards: [
+          // each item in cards array has a 'place' to specify the location in the art gallery
+          // 'type' is either "image", "pdf", or "video"
+          // 'path' specifies the location of the asset, either as full URL or as path relative to this html file
+          {place: 1, type: "image", path: "https://storage.ning.com/topology/rest/1.0/file/get/12183304273?profile=RESIZE_584x", urlLink: "https://focities.com/"},
+          {place: 2, type: "pdf", path: "https://storage.ning.com/topology/rest/1.0/file/get/12183310260?profile=original"},
+          {place: 3, type: "video", path: "https://focities.com/wp-content/uploads/2021/03/FOC-Web-Header-Reel-1_1.mp4", muted: false},
+          {place: 4, type: "image", path: "https://storage.ning.com/topology/rest/1.0/file/get/12183304292?profile=RESIZE_584x"},
+          {place: 5, type: "image", path: "https://storage.ning.com/topology/rest/1.0/file/get/12183308654?profile=RESIZE_584x", urlLink: "https://www.chozenretreat.com/"},
+          {place: 6, type: "video", path: "https://www.youtube.com/watch?v=T2p0cE9ULvU"},
+          {place: 7, type: "image", path: "https://storage.ning.com/topology/rest/1.0/file/get/12183307297?profile=original", urlLink: "https://www.phxjax.com/"},
+          {place: 8, type: "image", path: "https://images.squarespace-cdn.com/content/v1/5a31dba57131a5e5ee140449/1672950189484-BFTNZ9W31ZIIEDX6TXSX/Screen+Shot+2022-08-18+at+2.37.28+AM.png?format=2500w", urlLink: "https://focities.com/"},
+          {place: 9, type: "image", path: "https://focities.com/wp-content/uploads/2023/02/CourtneyKinnare_MiamiArtWeek2-16-edited.jpg", urlLink: "https://www.phxjax.com/"},
+        ],
+        privacy: "invite", // "public" or "invite"
+        voiceChat: true,
+        appId: "com.focities.jfarrow.webshowcase",
+        apiKey: "1fHEvjz3kuO4B8I2rm6xDqDuGr3dbcmHL8q244EmP",
+      });
+    </script>
+  </body>
+</html>
